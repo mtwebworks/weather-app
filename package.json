@@ -1,0 +1,14 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather app - simple weather app with detailed current state and next days forecast.",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -o index.html"
+  },
+  "author": "Mateusz Jakubczyk",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "http-server": "14.0.0"
+  }
+}

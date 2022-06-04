@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mateusz Jakubczyk">
+    <title>Weather App</title>
+    <!-- GoogleFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="dark-theme">
+    <div class="conainer">
+        <nav class="nav">
+            <div class="nav__search-bar nav__search-bar--hidden">
+                <input type="search" class="nav__search-input">
+                <button type="submit" class="nav__search-button nav__search-button--hidden"></button>
+            </div>
+            <button class="nav__search-icon"></button>
+        </nav>
+        <section class="current-weather">
+            <p class="current-weather__date-info">
+            <span class="current-weather__date"></span>
+            <span class="current-weather__location"></span>
+            </p>
+            <div class="current-weather__hr"></div>
+            <div class="current-weather__info">
+                <img src="./img/01d.svg" alt="" class="current-weather__icon">
+                <p class="current-weather__temperature"> 
+                    <span class="current-weather__current-temperature"></span>
+                    <span class="current-weather__feels-temperature">Feels like: </span>   
+                </p>
+            </div>
+            <div class="current-weather__data-block">
+                <div class="current-weather__data">
+                    <img src="./img/pressure-icon.svg" alt="" class="current-weather__data-icon">
+                    <p class="current-weather__data-value-block">
+                        <span class="current-weather__data-value" data-pressure></span> hpa
+                    </p>
+                </div>
+                <div class="current-weather__data">
+                    <img src="./img/humidity-icon.svg" alt="" class="current-weather__data-icon">
+                    <p class="current-weather__data-value-block">
+                        <span class="current-weather__data-value" data-humidity></span> %
+                    </p>
+                </div>
+                <div class="current-weather__data-hr"></div>
+                <div class="current-weather__data">
+                    <img src="./img/windspeed-icon.svg" alt="" class="current-weather__data-icon">
+                    <p class="current-weather__data-value-block">
+                        <span class="current-weather__data-value" data-windspeed></span> m/s
+                    </p>
+                </div>
+                <div class="current-weather__data">
+                    <img src="./img/winddirection-icon.svg" alt="" class="current-weather__data-icon" data-wind-icon>
+                    <p class="current-weather__data-value-block">
+                        <span class="current-weather__data-value" data-winddirection></span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="weather-forecast">
+            <div class="weahter-forecast__title-block">
+                <p class="weather-forecast__title">NEXT DAYS</p>
+                <div class="weather-forecast__hr"></div>
+            </div>
+            <div class="weather-forecast__data">
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer-text">2022 | Created with <a href="https://openweathermap.org">OpenWeather</a> API</p>
+
+        </footer>
+    </div>
+    <div class="popup popup--hidden">
+        <p class="popup-text"></p>
+    </div>
+</body>
+</html>
+
